@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* Font */
+@font-face {
+  @include webFont('Noto Sans', 'normal', 300, NotoSans-Light);
+}
+  
+@font-face {
+  @include webFont('Noto Sans', 'normal', 400, NotoSans-Regular);
+}
+  
+@font-face {
+  @include webFont('Noto Sans', 'normal', 500, NotoSans-Medium);
+}
+
+@font-face {
+  @include webFont('Noto Sans', 'normal', 700, NotoSans-Bold);
+}

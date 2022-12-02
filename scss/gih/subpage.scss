@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import '../variables';
+@import '../mixin';
+@import '../font';
+@import '../reset';
+@import 'common-layout';
+@import '../subpage-style';
+@import '../forms';
+@import 'components';
+@import '../etc';
+@import '../lib/jquery-ui.min';
+
+
+.youtube_box {
+    position:relative;
+    width:100%;
+    height:0;
+    padding-bottom:50.3%;
+    overflow:hidden;
+    iframe {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        max-width:100%;
+    }
+}

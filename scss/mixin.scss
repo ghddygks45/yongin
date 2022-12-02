@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+// Media Query
+@mixin mobile {
+    @media screen and (max-width:1216px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and(min-width:1217px), print {
+        @content;
+    }
+}
+
+// WebFont NotoSans
+@mixin webFont($font-family, $font-style, $font-weight, $font-name) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: local("※"), url('../fonts/' + $font-name + '.woff2') format("woff2"), url('../fonts/' + $font-name + '.woff') format("woff");
+}
+
+// Float Clear
+@mixin pseudo-element {
+   display:block;
+   content:'';
+   clear:both;
+}
+
+// Before/After Element
+@mixin be-af-element {
+    display:block;
+    content:'';
+ }
+
+// Text Underline
+@mixin text-underline {
+    text-decoration:underline
+}
+
+// Text Ellipsis
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// @mixin check($val) {
+//     @if $val == alert {
+
+//     }
+//     @else if $val == succ {
+
+//     }
+//     @else {
+
+//     }
+// }
